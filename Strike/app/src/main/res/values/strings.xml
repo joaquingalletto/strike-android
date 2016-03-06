@@ -1,8 +1,5 @@
 <resources>
     <string name="app_name">Strike</string>
     <string name="action_settings">Settings</string>
-<<<<<<< HEAD
     <string name="activity_walkthrough">WalkthroughActivity</string>
-=======
->>>>>>> 3f7a25820538be8cf9c98e7064570f04d67a9b49
 </resources>

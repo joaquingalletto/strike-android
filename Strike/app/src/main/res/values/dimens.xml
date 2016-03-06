@@ -3,9 +3,6 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
-<<<<<<< HEAD
     <dimen name="shadow_width">4dp</dimen>
     <dimen name="slidingmenu_offset">60dp</dimen>
-=======
->>>>>>> 3f7a25820538be8cf9c98e7064570f04d67a9b49
 </resources>
