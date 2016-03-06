@@ -1,7 +1,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+<<<<<<< HEAD
     tools:context=".ui.activity.HomeActivity">
+=======
+    tools:context="com.bluesandwich.joaquin.strike.MainActivity">
+>>>>>>> 3f7a25820538be8cf9c98e7064570f04d67a9b49
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"

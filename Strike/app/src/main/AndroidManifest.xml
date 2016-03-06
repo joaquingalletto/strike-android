@@ -3,26 +3,38 @@
     package="com.bluesandwich.joaquin.strike">
 
     <application
+<<<<<<< HEAD
         android:name=".core.SKAplication"
+=======
+>>>>>>> 3f7a25820538be8cf9c98e7064570f04d67a9b49
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+<<<<<<< HEAD
             android:name=".ui.activity.HomeActivity"
             android:label="@string/app_name">
+=======
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+>>>>>>> 3f7a25820538be8cf9c98e7064570f04d67a9b49
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity
             android:name=".ui.activity.Walkthrough"
             android:label="@string/activity_walkthrough"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
+=======
+>>>>>>> 3f7a25820538be8cf9c98e7064570f04d67a9b49
     </application>
 
 </manifest>
