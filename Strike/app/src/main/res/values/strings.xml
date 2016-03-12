@@ -2,4 +2,6 @@
     <string name="app_name">Strike</string>
     <string name="action_settings">Settings</string>
     <string name="activity_walkthrough">WalkthroughActivity</string>
+    <string name="activity_home">HomeActivity</string>
+    <string name="attach">Menu</string>
 </resources>

@@ -5,4 +5,5 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="shadow_width">4dp</dimen>
     <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="text_option_menu">20dp</dimen>
 </resources>

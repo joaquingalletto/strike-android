@@ -37,13 +37,13 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        this.currentUserId = ((HomeFragmentCallback)getActivity()).getCurrentUser().identifier;
-        this.currentUserName = ((HomeFragmentCallback)getActivity()).getCurrentUser().name;
-        this.currentUser = ((HomeFragmentCallback)getActivity()).getCurrentUser();
+        //this.currentUserId = ((HomeFragmentCallback)getActivity()).getCurrentUser().identifier;
+        //this.currentUserName = ((HomeFragmentCallback)getActivity()).getCurrentUser().name;
+        //this.currentUser = ((HomeFragmentCallback)getActivity()).getCurrentUser();
 
         final View currentView = inflater.inflate(R.layout.fragment_home, container, false);
 
-        listView = (ListView) currentView.findViewById(R.id.home_listview);
+        //listView = (ListView) currentView.findViewById(R.id.home_listview);
 
         adapter = new HomeArrayAdapter(getActivity().getApplicationContext(), R.layout.fragment_home_audio_req_listitem);
         adapter.setCurrentUserId(currentUserId);
