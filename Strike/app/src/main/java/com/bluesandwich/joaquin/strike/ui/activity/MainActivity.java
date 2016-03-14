@@ -1,5 +1,7 @@
 package com.bluesandwich.joaquin.strike.ui.activity;
 
+import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -11,6 +13,8 @@ import android.view.MenuItem;
 import com.bluesandwich.joaquin.strike.R;
 import com.bluesandwich.joaquin.strike.core.SKAplication;
 import com.bluesandwich.joaquin.strike.data.model.SKUser;
+import com.bluesandwich.joaquin.strike.ui.fragment.HomeFragment;
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 public class MainActivity extends AppCompatActivity{
 
@@ -45,15 +49,25 @@ public class MainActivity extends AppCompatActivity{
     }
 
     private void loadHome(){
-        // setting content view
-        Intent targetActivity = new Intent(getApplicationContext(), HomeActivity.class);
 
-        //TODO: IMPLEMENT THE PRODUCT TOUR WALKTHROUGH ACTIVITY, NOW IS EMPTY
+        setContentView(R.layout.activity_main);
+        // configure the SlidingMenu
+        final SlidingMenu menu = new SlidingMenu(this);
+        menu.setMode(SlidingMenu.LEFT);
+        menu.setTouchModeAbove(SlidingMenu.TOUCHMODE_FULLSCREEN);
+        menu.setShadowWidthRes(R.dimen.shadow_width);
+        menu.setShadowDrawable(R.drawable.shadow);
+        menu.setBehindOffsetRes(R.dimen.slidingmenu_offset);
+        menu.setFadeDegree(0.35f);
+        menu.attachToActivity(this, SlidingMenu.SLIDING_CONTENT);
+        menu.setMenu(R.layout.fragment_menu);
 
-        targetActivity.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
-        startActivity(targetActivity);
 
-        //configuring the sliding menu
+        Fragment homeFragment = new HomeFragment();
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.activity_main, homeFragment);
+        transaction.commit();
+
     }
 
     @Override

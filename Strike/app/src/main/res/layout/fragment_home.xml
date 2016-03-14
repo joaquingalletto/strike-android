@@ -6,6 +6,56 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/mainAppColor"
+        android:orientation="horizontal">        <!-- improvised action bar -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/menu_button"
+                android:gravity="center_vertical|left"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Menu" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
     <LinearLayout
         android:id="@+id/wrapper_home"
         android:layout_width="match_parent"

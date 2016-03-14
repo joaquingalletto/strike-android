@@ -6,4 +6,5 @@
     <color name="unselectedOption">#696969</color>
     <color name="selectedOption">#FFFFFF</color>
     <color name="separatorMenu">#40696969</color>
+    <color name="mainAppColor">#ff6933</color>
 </resources>
